@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> IWT 11.1 </title>
+    <style>
+        h1 {
+            text-align: center;
+            background-color: aqua;
+            color: red;
+        }
+        body {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1> Registration Page </h1>
+    <form>
+        <div>
+            <label for="name"> Enter Name </label> 
+            <input type="text" name="Name" id="name" placeholder="Only characters allowed">
+        </div>
+        <br/>
+        <div>
+            <label for="DoB"> Enter your Date of Birth </label>
+            <input type="date" name="DoB" id="DoB">
+        </div>
+        <br/>
+        
+        <div>
+            <label for="phone"> Enter Phone Number </label>
+            <input type="tel" name="Phone" id="phone" placeholder="+91-1234567890">
+        </div>
+        <br/>
+        <div>
+            <label for="email"> Enter Email Address </label>
+            <input type="email" name="Email" id="email" placeholder="abc@mail.com">
+        </div>
+        <br/>
+        <div>
+            <label for="gen"> Choose your gender: </label>
+            <label for="male"> Male </label>
+            <input type="radio" name="Gender" id="male">
+            <label for="female"> Female </label>
+            <input type="radio" name="Gender" id="female">
+            <label for="others"> Prefer not to say </label>
+            <input type="radio" name="Gender" id="others">
+        </div>
+        <br/>
+        <div>
+            <label for="password"> Create Password </label>
+            <input type="password" name="Password" id="password" minlength="8" placeholder="Minimum 8 characters">
+        </div>
+        <br/>
+        <label for="comments"> Comments </label>
+        <br/>
+        <textarea name="comments" id="comments" cols="30" rows="10" placeholder="..."></textarea>
+        <br/>
+        <br/>
+        <input type="submit" value="Register">
+    </form>
+    <nav>
+        <p> Home: <a href="https://www.google.com"> Click here </a></p>
+        <p> Contact Us: <a href="https://www.linkedin.com/in/mrsingh710/"> Click here </a></p>
+        <p> About: <a href="../HTML//Projects/My HTML Resume.html"> Click here </a></p>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+td {
+    padding: 15px;
+}
+button {
+    padding: 15px;
+}
+div {
+    padding: 5px;
+}
+

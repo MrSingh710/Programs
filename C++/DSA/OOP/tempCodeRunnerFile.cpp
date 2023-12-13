@@ -1,0 +1,1 @@
+ cout<< "Simple constructor called!" <<endl;

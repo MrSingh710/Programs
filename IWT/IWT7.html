@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .fixed {
+            position: fixed;
+            border-width: 5px;
+            border: solid;
+            left: 250px;
+            height: 50px;
+            width: 100px;
+            top: 250px;
+        }
+        .relative {
+            position: relative;
+            border-width: 5px;
+            border: solid;
+            left: 50px;
+            height: 50px;
+            width: 100px;
+            top: 1500px;
+        }
+        .static {
+            position: static;
+            border-width: 5px;
+            border: solid;
+            left: 50px;
+            height: 250px;
+            width: 700px;
+            top: 1500px;
+        }
+        .absolute {
+            position: absolute;
+            border-width: 5px;
+            border: solid;
+            border-color: green;
+            left: 50px;
+            height: 100px;
+            width: 200px;
+            top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="static"> 
+        <div class="absolute"> 
+            <table>
+                <thead> <th> NAME </th>
+                    <th> MARKS </th>
+                </thead>
+                <tr> <td> A </td>
+                    <td> 100 </td>
+                    </tr>
+                    <tr> <td> B </td>
+                        <td> 60 </td>
+                    </tr>
+        </table>
+    </div>
+    </div>
+    <div class="fixed"> 
+        <div class="absolute"> 
+            <table>
+                <thead> <th> NAME </th>
+                    <th> MARKS </th>
+                </thead>
+                <tr> <td> A </td>
+                    <td> 100 </td>
+                    </tr>
+                    <tr> <td> B </td>
+                        <td> 60 </td>
+                    </tr>
+        </table>
+    </div>
+    </div>
+    
+</body>
+</html>

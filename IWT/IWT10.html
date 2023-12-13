@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> IWT 10 </title>
+    
+</head>
+<body>
+    <h1> Sign Up Page </h1>
+    <form>
+        <div>
+            <label for="name"> Enter name </label> 
+            <input type="text" name="Name" id="name" placeholder="Only characters allowed" required>
+        </div>
+        <br/>
+        <div>
+            <label for="password"> Enter password </label>
+            <input type="password" name="Password" id="password" minlength="8" placeholder="Minimum 8 characters">
+        </div>
+        <br/>
+        <div>
+            <label for="date"> Choose your date of birth </label>
+            <input type="date" name="Date" id="date">
+        </div>
+        <br/>
+        <div>
+            <label for="phone"> Enter phone number </label>
+            <input type="tel" name="Phone" id="phone" placeholder="+91-1234567890">
+        </div>
+        <br/>
+        <div>
+            <label for="email"> Enter email address </label>
+            <input type="email" name="Email" id="email" placeholder="abc@mail.com">
+        </div>
+        <br/>
+        <div>
+            <label for="gen"> Choose your gender: </label>
+            <label for="male"> Male </label>
+            <input type="radio" name="Gender" id="male">
+            <label for="female"> Female </label>
+            <input type="radio" name="Gender" id="female">
+            <label for="others"> Prefer not to say </label>
+            <input type="radio" name="Gender" id="others">
+        </div>
+        <br/>
+        <div>
+            <label for=""> Choose payment method </label>
+            <select name="Payment" id="payment">
+                <option value="none" selected hidden disabled> Choose an option </option>
+                <option value="payment"> RuPay </option>
+                <option value="payment"> Visa </option>
+                <option value="payment"> MasterCard </option>
+            </select>
+        </div>
+        <br/>
+        <input type="submit" value="Submit">
+        <!-- OR <button> Click Here </button> --> 
+    </form>
+    
+</body>
+</html>
