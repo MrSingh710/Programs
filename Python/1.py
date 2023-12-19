@@ -5,7 +5,7 @@ print('''welcome''')
 print(5*10/2)
 print('\n')
 
-# variable can store any data type 
+# variable can store any data type, i.e., python is a dynamically-typed language
 name = 'Jas'
 print(type(name))
 print('My name is ', name)
@@ -16,18 +16,3 @@ age = 20
 print(type(age))
 print('He is', age, 'years old')
 print('He is '+ str(age) + ' years old') # only strings can concatenate, so we have first typecasted the integer into string
-
-
-
-
-
-
-# if-else
-guessList = ['John', 'Rahul', 'Pinak', 'Akash']
-print("Please enter your name: ")
-nameVar = input()
-if nameVar in guessList:
-    print("Welcome", nameVar)
-else:
-    print("Sorry, you are not welcome")
-
