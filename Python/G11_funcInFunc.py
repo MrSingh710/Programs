@@ -11,3 +11,5 @@ def outerFun(a, b):
 
 result = outerFun(10, 13)
 print(result) 
+
+# addition(1, 3) can't be used outside the outerFun as it is a local function defined locally (local scope)
