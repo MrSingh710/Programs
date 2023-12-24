@@ -9,7 +9,7 @@ def add(*args):    # '*' is used to take any number of arguments
 add(2, 4, 5)
 add(33, 7)
 
-
+# Returning multiple values
 def calculator(n1, n2):
     sum = n1+n2
     mult = n1*n2
