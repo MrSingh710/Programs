@@ -12,7 +12,7 @@ int main() {
     vector<int> brr(n, -1);
     for (int i = 0; i < brr.size(); i++) {
         cout << brr[i] << "  ";
-    } 
+    }
 
     cout << "\nPrinting crr" << endl;
     vector<int> crr{10, 20, 30, 40, 50};
