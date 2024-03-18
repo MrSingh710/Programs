@@ -1,32 +1,34 @@
 # include <iostream>
 using namespace std;
 
-int main() {
-    int size, arr[100];
-    int ans1 = 0;
-    int count1;
-    int count2 = 0;
+bool linearFind(int arr[], int size, int key) {
 
-    cout << "Enter the size of the array: " << endl;
+    for(int i = 0; i < size; i++) {
+        if(arr[i] == key) {
+            return true;
+        }    
+    }
+    return false;
+
+}
+
+int main() {
+    int size, arr[100], key;
+
+    cout << "Enter the size of the array: ";
     cin >> size;
 
-    cout << "Enter the elements: ";
+    cout << "Enter the elements in the array: ";
     for(int i = 0; i < size; i++) {
         cin >> arr[i];
     }
 
-    for (int i = 0; i < size; i++) {
-        count1 = 0;
-        for (int j = 0; j < size; j++) {
-            
-            if (arr[i] == arr[j]) {
-                count1++;
-            }
-        }
-        if (count1 > count2) {
-            count2 = count1;
-            ans1 = i;
-        }
+    cout << "Enter the key to find: ";
+    cin >> key;
+
+    if (linearFind(arr, size, key)) {
+        cout << "Found" << endl;
+    } else {
+        cout << "Not Found" << endl;
     }
-    cout << "Mode: " << arr[ans1] << endl;
 }

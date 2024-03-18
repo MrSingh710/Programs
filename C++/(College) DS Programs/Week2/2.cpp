@@ -1,40 +1,49 @@
 # include <iostream>
+# include <algorithm>
 using namespace std;
 
-void printArray (int arr[], int size) {
-    for(int i = 0; i < size; i++) {
-        cout << arr[i] << "     ";
-    }
-}
+bool binaryFind(int arr[], int size, int key) {
+    int start = 0;
+    int end = size - 1;
+    while (start <= end) {
+        int mid = (start + end) / 2;
 
-void removeElement(int arr[], int size, int element) {
-    int n;
-    for (int i = 0; i < size; i++) {
-        if (arr[i] == element) {
-            n = i;
+        if(arr[mid] == key) {
+            return true;
         }
-    }
 
-    for (int i = n; i < size; i++) {
-        arr[i] = arr[i + 1];
+        else if(arr[mid] < key) {
+            start = mid + 1;
+        }
+
+        else {
+            end = mid - 1;
+        }
+
     }
+    return false;
+    
 }
 
 int main() {
-    int n, size, arr[100];
-
-    cout << "Enter the element to be removed: ";
-    cin >> n;
+    int size, arr[100], key;
 
     cout << "Enter the size of the array: ";
     cin >> size;
 
-    cout << "Enter the elements: ";
+    cout << "Enter the elements in the array: ";
     for(int i = 0; i < size; i++) {
         cin >> arr[i];
     }
 
-    removeElement(arr, size, n);
+    cout << "Enter the key to find: ";
+    cin >> key;
 
-    printArray (arr, size - 1);
+    sort(arr, arr + size);
+
+    if (binaryFind(arr, size, key)) {
+        cout << "Found" << endl;
+    } else {
+        cout << "Not Found" << endl;
+    }
 }

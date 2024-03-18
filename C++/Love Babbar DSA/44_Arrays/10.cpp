@@ -14,7 +14,7 @@ void sort(vector<int>& a) {
     int i = 0;
     int start = i;
     int end = a.size() - 1;
-    while(start < end) {
+    while(start < end - 1) {
 
         if(a[start] == 0) {
             start++;
@@ -33,7 +33,7 @@ void sort(vector<int>& a) {
 }
 
 int main() {
-    vector<int> a{0, 1, 0, 1, 1, 0, 1, 0, 1, 1};
+    vector<int> a{0, 0, 1, 1, 1, 1, 0, 0, 1, 1};
 
     sort(a);
 
