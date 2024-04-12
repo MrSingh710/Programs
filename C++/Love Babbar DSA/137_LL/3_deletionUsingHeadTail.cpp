@@ -106,7 +106,4 @@ int main() {
     deletePosition(6, head, tail);
     print(head); 
 
-    insertAtPosition(4, head, tail, 20);
-    print(head);
-
 }
