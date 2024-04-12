@@ -59,9 +59,10 @@ class Stack {
     // O(n)
     // int size() {
     //     int c = 0;
-    //     while(top) {
+    //     Node* temp = top;
+    //     while(temp) {
     //         c++;
-    //         top = top -> next;
+    //         temp = temp -> next;
     //     }
     //     return c;
     // }
