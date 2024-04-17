@@ -43,17 +43,18 @@ int lengthOfLL(Node* &head) {
 
 
 void reverse(Node* &head, Node* &tail) {
-    Node* realHead = tail;
+    // For Starting
     Node* current = head -> next;
     Node* nextNode = head -> next -> next;
     head -> next = NULL;
-
+    // Default
     while(nextNode) {
         current -> next = head;
         head = current;
         current = nextNode;
         nextNode = nextNode -> next;
     }
+    // For last 2 nodes
     current  -> next = head;
     head = current;
    
