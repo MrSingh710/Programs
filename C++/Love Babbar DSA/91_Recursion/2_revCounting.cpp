@@ -1,18 +1,18 @@
 #include <iostream>
 using namespace std;
 
-void counting(int n) {
+void revCounting(int n) {
 
     // Base case
     if(n == 0) {
         return;
-    }
+    } 
 
     // Processing
     cout << n << "   ";
 
     // Recursive relation
-    counting(n - 1);
+    revCounting(n - 1);
     
 }
 
@@ -21,9 +21,9 @@ int main()  {
 
     int n;
 
-    cout << "Enter the number from which reverse counting will be started: ";
+    cout << "Enter the number from which reverse revCounting will be started: ";
     cin >> n;
 
-    counting(n);
+    revCounting(n);
 
 }
