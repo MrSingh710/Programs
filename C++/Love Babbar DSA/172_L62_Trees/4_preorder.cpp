@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stack>
 using namespace std;
 
 class Node {
@@ -31,15 +32,37 @@ Node* buildTree(Node* root) {
     
 }
 
-void inorder(Node* root) {
+void preorderRecursive(Node* root) {
     // Base case
     if(root == NULL) {
         return;
     }
 
-    inorder(root -> left);
     cout << root -> data << "   ";
-    inorder(root -> right);
+    preorderRecursive(root -> left);
+    preorderRecursive(root -> right);
+
+}
+
+void preorderIterative(Node* root) {
+    if(root == NULL) {
+        return;
+    }
+
+    stack<Node*> s;
+    s.push(root);
+
+    while (!s.empty()) {
+        Node* temp = s.top();
+        cout << temp -> data << "   ";
+        s.pop();   
+        if(temp -> right) {
+            s.push(temp -> right);
+        }
+        if(temp -> left) {
+            s.push(temp -> left);
+        }
+    }
 
 }
 
@@ -47,10 +70,13 @@ int main() {
 
     Node* root = NULL;
     // Creation of tree
-    // 1 3 7 -1 -1 11 -1 -1 5 17 -1 -1 -1 
+    // 1 3 7 -1 -1 11 -1 -1 5 -1 17 -1 -1 
     root = buildTree(root);
 
-    cout << "Printing inorder traversal:-" << endl;
-    inorder(root);
+    cout << "Printing recursive preorder traversal:-" << endl;
+    preorderRecursive(root);
+    
+    cout << "\nPrinting iterative preorder traversal:-" << endl;
+    preorderIterative(root);
 
 }

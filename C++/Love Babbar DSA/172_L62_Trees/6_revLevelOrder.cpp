@@ -79,7 +79,7 @@ int main() {
     Node* root = NULL;
 
     // Creation of tree
-    // 1 3 7 -1 -1 11 -1 -1 5 17 -1 -1 -1 
+    // 1 3 7 -1 -1 11 -1 -1 5 -1 17 -1 -1 
     root = buildTree(root);
 
     // Level order traversal

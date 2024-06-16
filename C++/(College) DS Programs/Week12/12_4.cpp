@@ -38,7 +38,7 @@ string frequencySort(string s) {
 }
 
 int main() {
-    string s = "tree";
+    string s = "jassi";
     cout << "Original string: " << s << endl;
     string sortedString = frequencySort(s);
     cout << "Sorted string by frequency: " << sortedString << endl;

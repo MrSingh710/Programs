@@ -41,7 +41,7 @@ public:
 int main() {
     MedianFinder medianFinder;
 
-    vector<int> stream = {5, 15, 1, 3};
+    vector<int> stream = {10, 30, 2, 6};
     for (int num : stream) {
         medianFinder.addNum(num);
         cout << "Current median: " << medianFinder.findMedian() << endl;

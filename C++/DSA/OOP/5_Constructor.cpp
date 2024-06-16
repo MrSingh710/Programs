@@ -43,18 +43,26 @@ class Hero {
 };
 
 int main() {
-    cout<< "Calling simple constructor when allocating statically" <<endl;
+
+    cout<< "\nCalling simple constructor when allocating statically" <<endl;
     // Creation of object invokes the constructor
     Hero simpleStatic; 
-    cout<< "Calling parameterised constructor when allocating statically" <<endl;
+
+    cout<< "\nCalling parameterised constructor when allocating statically" <<endl;
     Hero parameterisedStatic(60);
-    cout<< "Address of parameterisedStatic: " << &parameterisedStatic <<endl;
-    cout<< "Calling simple constructor when allocating dynamically" <<endl;
+
+    cout<< "\nAddress of parameterisedStatic: " << &parameterisedStatic <<endl;
+    
+    cout<< "\nCalling simple constructor when allocating dynamically" <<endl;
     Hero *simpleDynamic = new Hero; // OR Hero Dynamic = new Hero()
-    cout<< "Calling parameterised constructor when allocating dynamically" <<endl;
+    
+    cout<< "\nCalling parameterised constructor when allocating dynamically" <<endl;
     Hero *parameterisedDynamic = new Hero(70);
-    cout<< "Address of parameterisedDynamic: " << parameterisedDynamic <<endl;
+    
+    cout<< "\nAddress of parameterisedDynamic: " << parameterisedDynamic <<endl;
+    
     cout<< endl;
+    
     Hero parameterisedStatic2(70, 'A');
     parameterisedStatic2.print();
     // Copy Constructor

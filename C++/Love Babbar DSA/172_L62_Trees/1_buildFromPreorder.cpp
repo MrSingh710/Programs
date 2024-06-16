@@ -1,4 +1,5 @@
 #include <iostream>
+#include <queue>
 using namespace std;
 
 class Node {
@@ -31,26 +32,12 @@ Node* buildTree(Node* root) {
     
 }
 
-void postorder(Node* root) {
-    // Base case
-    if(root == NULL) {
-        return;
-    }
-
-    postorder(root -> left);
-    postorder(root -> right);
-    cout << root -> data << "   ";
-
-}
 
 int main() {
-
     Node* root = NULL;
-    // Creation of tree
-    // 1 3 7 -1 -1 11 -1 -1 5 17 -1 -1 -1 
-    root = buildTree(root);
 
-    cout << "Printing postorder traversal:-" << endl;
-    postorder(root);
+    // Creation of tree
+    // 1 3 7 -1 -1 11 -1 -1 5 -1 17 -1 -1
+    root = buildTree(root);
 
 }
