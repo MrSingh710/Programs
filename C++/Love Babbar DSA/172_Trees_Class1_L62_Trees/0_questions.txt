@@ -1,5 +1,5 @@
-- Construct Binary Tree from Inorder & Preorder (geeksforgeeks)
+Construct Binary Tree from Inorder & Preorder (geeksforgeeks)
     https://www.geeksforgeeks.org/problems/construct-tree-1/1
 
-- Construct Binary Tree from Inorder and Postorder (geeksforgeeks)
+Construct Binary Tree from Inorder and Postorder (geeksforgeeks)
     https://www.geeksforgeeks.org/problems/tree-from-postorder-and-inorder/0
