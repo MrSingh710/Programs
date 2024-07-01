@@ -89,7 +89,7 @@ int main() {
     Library library;
 
     Book book1("To Kill a Mockingbird", "Harper Lee", 1960, "9780061120084");
-    Book book2("The Great Gatsby", "F. Scott Fitzgerald", 1925, "9780743273565");
+    Book book2("The Theory of Everything", "Stephen Hawking", 1925, "9780743273565");
     Book book3("Pride and Prejudice", "Jane Austen", 1813, "9780486280511");
 
     library.addBook(book1);

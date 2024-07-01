@@ -88,9 +88,9 @@ public:
 int main() {
     HashTable phoneBook(20);
 
-    phoneBook.addContact(1, "Nizami Sayeed", 1234567890);
-    phoneBook.addContact(2, "Mohd Arman", 9876543210);
-    phoneBook.addContact(3, "Mahmood", 5551234567);
+    phoneBook.addContact(1, "ABC", 1133557799);
+    phoneBook.addContact(2, "XYZ", 987654321);
+    phoneBook.addContact(3, "RST", 224466889);
 
     phoneBook.displayContacts();
     phoneBook.searchContact(2);
