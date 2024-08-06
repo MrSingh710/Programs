@@ -42,7 +42,8 @@
     "string": "cpp",
     "random": "cpp",
     "new": "cpp",
-    "ostream": "cpp"
+    "ostream": "cpp",
+    "iomanip": "cpp"
   },
   "C_Cpp_Runner.msvcWarnings": [
     "/W4",

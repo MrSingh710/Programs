@@ -103,7 +103,7 @@ Node* deleteNode(Node* root, int target) {
     }
 
     return root;  
-
+  
 }
 
 int main() {
@@ -113,7 +113,7 @@ int main() {
     cout << "Inorder traversal:- " << endl;
     inorderRecursive(root); 
 
-    deleteNode(root, 2);
+    deleteNode(root, 8);
 
     cout << "\nInorder traversal after deleting the node:- " << endl;
     inorderRecursive(root); 

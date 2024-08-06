@@ -2,6 +2,17 @@
 #include <vector>
 using namespace std;
 
+/**
+ * Prints the matrix in a wave pattern.
+ *
+ * This function prints the elements of the matrix in a wave pattern,
+ * where it prints the elements column-wise alternatively from top to bottom
+ * and bottom to top.
+ *
+ * @param vec The matrix represented as a vector of vectors.
+ *
+ * @returns None
+ */
 void wavePrintMatrix(vector<vector<int>> vec) {
     int col = vec[0].size();
     for(int i = 0; i < col; i++) { 
