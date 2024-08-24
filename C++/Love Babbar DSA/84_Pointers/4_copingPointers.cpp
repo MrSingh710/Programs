@@ -11,9 +11,9 @@ int main() {
 
 
     int a = 10;
-    int *p = &a;
-    int *q = p;     // Copies p pointer to q
-    int *r = q;     // Copies q pointer to r
+    int* p = &a;
+    int* q = p;     // Copies p pointer to q
+    int* r = q;     // Copies q pointer to r
 
     cout << a << endl;      // 10
     cout << &a << endl;     // address of a
