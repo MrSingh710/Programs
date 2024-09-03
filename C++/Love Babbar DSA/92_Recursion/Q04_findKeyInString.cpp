@@ -4,7 +4,7 @@ using namespace std;
 bool findKey(string str, string key) {
 
     if(str.length() == 0) {
-        return true;
+        return false;
     }
 
     findKey(str.length() - 1, key);
@@ -20,6 +20,7 @@ bool findKey(string str, string key) {
 
 }
 
+
 int main() {
 
     string str = "Jaspreet Singh";
@@ -32,4 +33,3 @@ int main() {
         cout << "Key found" << endl;
     }
 }
-
