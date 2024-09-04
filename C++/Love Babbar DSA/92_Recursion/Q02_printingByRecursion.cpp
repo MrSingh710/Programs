@@ -23,12 +23,11 @@ void print(int arr[], int size) {
         return;
     }
 
-
-    // 1 case solved by recursion
-    cout << arr[5 - size] << "    ";
+    // 1 case solved
+    cout << arr[0] << "    ";
     
     // Rest recursion will handle
-    print(arr, size - 1);  
+    print(arr + 1, size - 1); 
 
 }
 
@@ -40,7 +39,7 @@ void print(int arr[], int size, int i) {
         return;
     }
 
-    // 1 case solved by recursion
+    // 1 case solved 
     cout << arr[i] << "    ";
     
     // Rest recursion will handle
@@ -52,7 +51,7 @@ void print(int arr[], int size, int i) {
 int main()  {
 
     int arr[] = {10, 20, 30, 40, 50};
-    int size = 5;
+    int size = sizeof(arr) / sizeof(arr[0]);
     
     print(arr, size);
 
