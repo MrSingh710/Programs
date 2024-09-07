@@ -1,0 +1,3 @@
+Programming is good.
+Python is good Programming language.
+Snake's name is python.

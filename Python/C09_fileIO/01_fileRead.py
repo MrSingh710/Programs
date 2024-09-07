@@ -1,7 +1,7 @@
-# import os
-# print(os.getcwd())
+f = open("C09_fileIO/03_file.txt")     # Default mode is read
 
-f = open("C09_fileIO/file.txt")
 data = f.read()
+
 print(data)
-f.close() 
+
+f.close()

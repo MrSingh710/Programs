@@ -1,0 +1,10 @@
+A novel deep-learning algorithm developed by EPFL researchers can differentiate 
+between the effects of self-interacting dark matter and active galactic nuclei 
+feedback in galaxy clusters with 80% accuracy.
+
+In a significant advancement for astrophysics and cosmology, researchers at the 
+École Polytechnique Fédérale de Lausanne (EPFL) have created an artificial 
+intelligence algorithm capable of distinguishing the subtle effects of dark 
+matter from other cosmic phenomena. This breakthrough, published in Nature 
+Astronomy, could revolutionize our understanding of one of the universe’s 
+most enigmatic components.
