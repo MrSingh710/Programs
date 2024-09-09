@@ -9,5 +9,4 @@ weeks = int(left / 7)
 
 daysLeft = int(left % 7)
 
-
-print(f"Converted years = {years}\nConverted weeks = {weeks}\nDays left = {daysLeft}")
+print(f"Converted days = {years} years and {weeks} weeks\nDays left = {daysLeft}")

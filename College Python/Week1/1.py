@@ -1,5 +1,5 @@
 # Write a program that calculate and prints simple interest.
-# Take  the principle amount, rate and time from the user input.
+# Take the principle amount, rate and time from the user input.
 
 interest = float(input("Enter the interset rate: "))
 amount = float(input("Enter the principal amount: "))
