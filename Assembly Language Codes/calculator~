@@ -1,0 +1,14 @@
+
+;Division
+MVI B, 5    
+MVI C, 25     
+MVI A, 00     
+
+DIV_LOOP:  SUB C         
+           DCR B         
+           JNZ DIV_LOOP  
+
+STA 0     
+
+HLT  
+   

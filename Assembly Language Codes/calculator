@@ -1,0 +1,48 @@
+;Addition
+MVI A, 20
+MOV B, A
+
+MVI A, 15
+ADD B
+
+STA 0
+
+HLT 
+
+;Subtraction
+MVI A, 5
+MOV B, A
+
+MVI A, 25
+SUB B
+
+STA 0
+
+HLT
+
+;Multiplication
+MVI B, 20     
+MVI C, 5      
+MVI A, 00     
+
+MUL_LOOP:  ADD B         
+           DCR C         
+           JNZ MUL_LOOP  
+
+STA 0     
+
+HLT    
+
+;Division
+MVI B, 5    
+MVI C, 25     
+MVI A, 00     
+
+DIV_LOOP:  SUB B         
+           DCR C         
+           JNZ DIV_LOOP  
+
+STA 0     
+
+HLT  
+   
