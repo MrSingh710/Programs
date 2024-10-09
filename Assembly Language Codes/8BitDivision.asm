@@ -1,0 +1,8 @@
+MVI A, 0AH
+MVI B, 03H
+MVI C, 00H
+MVI D, 00H
+
+DIV_LOOP:	CMP B
+
+			

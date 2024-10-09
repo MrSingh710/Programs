@@ -1,6 +1,6 @@
 def checkBalanced(s1, s2):
     for ch in s1:
-        if (not(ch in s2)):
+        if (ch not in s2):
             return False
     return True
 
