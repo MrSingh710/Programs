@@ -1,0 +1,14 @@
+
+;Addition of n Natural Numbers
+
+MVI B, 03H	
+MVI C, 00H	
+MVI D, 01H	
+
+Loop: 	MOV A, C
+	ADD D
+	MOV C, A
+	INR D
+	DCR B
+	JNZ Loop
+HLT

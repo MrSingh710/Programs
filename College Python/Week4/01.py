@@ -6,4 +6,4 @@ def length(string):
 
 string = input("Enter the string: ")
 print(f"Length using without inbuilt function: {length(string)}")
-print(f"Lenght using inbuilt function: {len(string)}")
+print(f"Length using inbuilt function: {len(string)}")

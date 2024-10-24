@@ -1,12 +1,21 @@
-def find_substring_ignore_case(string, substring):
-    string_lower = string.lower()
-    substring_lower = substring.lower()
-    occurrences = []
-    start = 0
-    while True:
-        start = string_lower.find(substring_lower, start)
-        if start == -1:
+def countOcc(string, subString):
+    string = string.lower()
+    subString = subString.lower()
+    occurances = []
+
+    i = 0
+    while (i < len(string)):
+        index = string.find(subString, i)
+
+        if(index == -1):
             break
-        occurrences.append(start)
-        start += len(substring_lower)
-    return occurrences
+
+        occurances.append(index)
+        i = index + 1
+        
+    return occurances
+
+string = input("Enter a string: ")
+subString = input("Enter a sub string: ")
+
+print(f"All occurances of sub string in the string: {countOcc(string, subString)}")
