@@ -1,0 +1,27 @@
+; 2022BCSE019
+;Subtraction of 16 two bit-numbers
+
+
+START:     MVI A, 34H      ; Load low byte of the first number into accumulator
+           MOV C, A        ; Store it in register C
+           MVI A, 12H      ; Load low byte of the second number into accumulator
+           SUB C           ; Subtract C (low bytes)
+           MOV L, A        ; Store the result in L register
+           JNC NO_BORROW   ; Jump to NO_BORROW if no borrow occurred
+
+BORROW:    MVI A, 78H      ; Load high byte of the first number into accumulator
+           MOV C, A        ; Store it in register C
+           MVI A, 56H      ; Load high byte of the second number into accumulator
+           SUB C           ; Subtract the high bytes
+           DCR A           ; Decrement to account for borrow
+           MOV H, A        ; Store the result in H register
+           JMP STORE       ; Jump to STORE result
+
+NO_BORROW: MVI A, 78H      ; Load high byte of the first number into accumulator
+           MOV C, A        ; Store it in register C
+           MVI A, 56H      ; Load high byte of the second number into accumulator
+           SUB C           ; Subtract the high bytes
+           MOV H, A        ; Store the result in H register
+
+STORE:     SHLD 0000       ; Store the result in memory (L -> 3000H, H -> 3001H)
+           HLT             ; Halt the program
