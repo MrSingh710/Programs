@@ -1,2 +1,2 @@
-from l0_module import myFunc
+from O10_module import myFunc
 
