@@ -5,3 +5,5 @@ for i in range(1, 4):
 
     except Exception as e:
         print(e)
+
+print("Program didn't crashed")
