@@ -1,0 +1,26 @@
+; 2022BCSE019
+; Addition of two 16-bit numbers
+
+START:    MVI C, 34H      
+          MVI A, 78H     
+          ADD C           
+          MOV L, A        
+          JNC NO_CARRY    
+
+CARRY:    MVI A, 12H      
+          MOV C, A        
+          MVI A, 56H      
+          ADD C           
+          INR A           
+          MOV H, A        
+          JMP STORE       
+
+NO_CARRY: MVI A, 12H      
+          MOV C, A        
+          MVI A, 56H      
+          ADD C           
+          MOV H, A       
+
+STORE:    SHLD 0
+
+HLT

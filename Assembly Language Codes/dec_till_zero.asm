@@ -1,0 +1,6 @@
+MVI C, 0005H
+
+DEC: DCR C
+     JNZ DEC
+
+HLT
