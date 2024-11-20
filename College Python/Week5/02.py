@@ -1,4 +1,4 @@
-with open("College Python/Week5/02.txt", "r") as f:
+with open("College Python/Week5/me.txt", "r") as f:
     print(f"Current position of cursor: {f.tell()}")
     f.seek(10)
     print(f"Current position of cursor: {f.tell()}")
