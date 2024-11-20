@@ -1,7 +1,7 @@
 import sqlite3
 
 def connect_db():
-    return sqlite3.connect('student.db')  # Replace 'student.db' with your database name
+    return sqlite3.connect('College Python/Week8/student.db')  
 
 def listTables():
     conn = connect_db()

@@ -1,7 +1,7 @@
 import sqlite3
 
 def connect_db():
-    return sqlite3.connect('student.db')
+    return sqlite3.connect('College Python/Week8/student.db')
 
 def deleteRow():
     conn = connect_db()
