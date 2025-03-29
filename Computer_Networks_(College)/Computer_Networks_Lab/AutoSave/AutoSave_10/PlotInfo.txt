@@ -1,0 +1,3 @@
+BUFFER_OCCUPANCY_PLOT,Buffer Size vs Time,Buffer_Occupancy_Log.csv,Buffer_Occupancy_Log\Buffer_Occupancy_Log_Occupied_Buffer_Size_vs_Time.xml
+TCP_CONGESTION_WINDOW_PLOT,Window Size vs Time,TCP_Congestion_Window_Log.csv,TCP_Congestion_Window_Log\TCP_Congestion_Window_Log_WindowSize_vs_Time.xml
+WIFI_BER_PLOT,BER vs Time,IEEE_802_11_Radio_Measurements_Log.csv,IEEE802.11 Radio Measurements\IEEE_802_11_Radio_Measurements_Log_BER_vs_Time.xml

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<NETSIM_EXPERIMENTS NAME="Computer_Networks_Lab">
+  <EXPERIMENT>
+    <NAME>Star</NAME>
+    <DATE>03/26/2025 11:23 AM</DATE>
+    <NETWORK>Internetworks</NETWORK>
+  </EXPERIMENT>
+  <EXPERIMENT>
+    <NAME>Ring</NAME>
+    <DATE>03/26/2025 11:34 AM</DATE>
+    <NETWORK>Internetworks</NETWORK>
+  </EXPERIMENT>
+</NETSIM_EXPERIMENTS>

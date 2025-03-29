@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Plots>
+  <Plot>
+    <Plot SUBLAYER_NAME="Application Performance">
+      <Plot DisplayName="Throughput vs Time" LogFileName="Application_Packet_Log.csv" ScriptFileName="Application_Packet_Log\Application_Packet_Log_Throughput_vs_Time.xml" />
+      <Plot DisplayName="Latency vs Time" LogFileName="Application_Packet_Log.csv" ScriptFileName="Application_Packet_Log\Application_Packet_Log_Latency_vs_Time.xml" />
+      <Plot DisplayName="Jitter vs Time" LogFileName="Application_Packet_Log.csv" ScriptFileName="Application_Packet_Log\Application_Packet_Log_Jitter_vs_Time.xml" />
+      <Plot DisplayName="Generation Rate vs Time" LogFileName="Application_Generation_Log.csv" ScriptFileName="Application_Packet_Log\Application_Packet_Log_Generation_Rate_vs_Time.xml" />
+    </Plot>
+    <Plot SUBLAYER_NAME="Link Performance">
+      <Plot DisplayName="Throughput vs Time" LogFileName="Link_Packet_Log.csv" ScriptFileName="Link_Packet_Log\Link_Packet_Log_Throughput_vs_Time.xml" />
+    </Plot>
+    <Plot SUBLAYER_NAME="WiFi Radio Measurements">
+      <Plot DisplayName="Interference vs Time" LogFileName="IEEE_802_11_Radio_Measurements_Log.csv" ScriptFileName="IEEE802.11 Radio Measurements\IEEE_802_11_Radio_Measurements_Log_Interference_vs_Time.xml" />
+      <Plot DisplayName="MCS Index vs Time" LogFileName="IEEE_802_11_Radio_Measurements_Log.csv" ScriptFileName="IEEE802.11 Radio Measurements\IEEE_802_11_Radio_Measurements_Log_MCS_Index_vs_Time.xml" />
+      <Plot DisplayName="Path Loss vs Time" LogFileName="IEEE_802_11_Radio_Measurements_Log.csv" ScriptFileName="IEEE802.11 Radio Measurements\IEEE_802_11_Radio_Measurements_Log_Path_Loss_vs_Time.xml" />
+      <Plot DisplayName="Rx Power vs Time" LogFileName="IEEE_802_11_Radio_Measurements_Log.csv" ScriptFileName="IEEE802.11 Radio Measurements\IEEE_802_11_Radio_Measurements_Log_Rx_Power_vs_Time.xml" />
+      <Plot DisplayName="Shadowing Loss vs Time" LogFileName="IEEE_802_11_Radio_Measurements_Log.csv" ScriptFileName="IEEE802.11 Radio Measurements\IEEE_802_11_Radio_Measurements_Log_Shadowing_Loss_vs_Time.xml" />
+      <Plot DisplayName="SINR vs Time" LogFileName="IEEE_802_11_Radio_Measurements_Log.csv" ScriptFileName="IEEE802.11 Radio Measurements\IEEE_802_11_Radio_Measurements_Log_SINR_vs_Time.xml" />
+      <Plot DisplayName="SNR vs Time" LogFileName="IEEE_802_11_Radio_Measurements_Log.csv" ScriptFileName="IEEE802.11 Radio Measurements\IEEE_802_11_Radio_Measurements_Log_SNR_vs_Time.xml" />
+      <Plot DisplayName="Total Loss vs Time" LogFileName="IEEE_802_11_Radio_Measurements_Log.csv" ScriptFileName="IEEE802.11 Radio Measurements\IEEE_802_11_Radio_Measurements_Log_Total_Loss_vs_Time.xml" />
+      <Plot DisplayName="BER vs Time" LogFileName="IEEE_802_11_Radio_Measurements_Log.csv" ScriptFileName="IEEE802.11 Radio Measurements\IEEE_802_11_Radio_Measurements_Log_BER_vs_Time.xml" />
+      <Plot DisplayName="Fading Loss vs Time" LogFileName="IEEE_802_11_Radio_Measurements_Log.csv" ScriptFileName="IEEE802.11 Radio Measurements\IEEE_802_11_Radio_Measurements_Log_Fading_Loss_vs_Time.xml" />
+    </Plot>
+    <Plot SUBLAYER_NAME="TCP Congestion Window">
+      <Plot DisplayName="Window Size vs Time" LogFileName="TCP_Congestion_Window_Log.csv" ScriptFileName="TCP_Congestion_Window_Log\TCP_Congestion_Window_Log_WindowSize_vs_Time.xml" />
+    </Plot>
+    <Plot SUBLAYER_NAME="Buffer Occupancy">
+      <Plot DisplayName="Buffer Size vs Time" LogFileName="Buffer_Occupancy_Log.csv" ScriptFileName="Buffer_Occupancy_Log\Buffer_Occupancy_Log_Occupied_Buffer_Size_vs_Time.xml" />
+    </Plot>
+  </Plot>
+</Plots>
